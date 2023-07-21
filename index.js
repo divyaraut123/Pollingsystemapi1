@@ -6,6 +6,9 @@ app.use(bodyParser.urlencoded({extended:true}))
 const db=require('./config/mongoose');
 
 // Routes
+app.get('/',function(req,res){
+    res.send("HEllo ptpject is running")
+})
 app.use('/',require('./routes/index'));
    
 app.listen(Port,function(err){
